@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Program for If statement</h1>
+        <p>I want to display something using if else</p>
+        <p id="demo"></p>
+        <script>
+            const minute= new Date().getMinutes();
+            let a;
+            
+            if(minute < 10)
+            {
+                a="The range of minutes is between 0 to 10";
+            }
+            else if(minute>11 && minute<20)
+            {
+                a="The range of minutes is between 11 to 20";
+            }
+            else if(minute>21 && minute<30)
+            {
+                a="The range of minutes is between 21 to 30";
+            }
+            else if(minute>31 && minute<40)
+            {
+                a="The range of minutes is between 31 to 40";
+            }
+            else if(minute>41 && minute<50)
+            {
+                a="The range of minutes is between 41 to 50";
+            }
+            else if(minute>51 && minute<60)
+            {
+                a="The range of minutes is between 51 to 60";
+            }
+            else
+            {
+                a="You have entered a value out of the range than 0 to 60";
+            }
+            document.getElementById("demo").innerHTML=a;
+        </script>
+    </body>
+</html>
