@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>table,th,td
+        {
+            border:4px black;
+            border-bottom-left-radius:2%;
+        }
+        th,td{
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-right:10px;
+            padding-left:40px;
+        }
+        tr:nth-child(even)
+        {
+            background-color: aqua;
+        }
+        tr:nth-child(odd)
+        {
+            background-color: beige;
+        }
+        #image {
+            display: none;
+        }
+        #btnID {
+             box-sizing: border-box;
+            }
+        #btnID2 {
+            display: none;
+        }
+    button:hover 
+    { 
+    zoom: 120%;
+        background-color: rgb(171, 255, 75);
+        text-align: center;
+        text-emphasis-color: blue;
+        }
+    a:hover{ 
+    background-color: rgb(241, 255, 39);
+                font-style: oblique;
+                font-weight: bold;
+        }
+    button{ 
+      background-color: rgb(255, 255, 254);
+        font-family: 'Lucida Sans';
+        }
+    body{
+        background-image:url("pic1.png");
+        }
+        </style>
+    <title>CV</title>
+</head>
+<body>
+    <script>
+        function show() 
+        {
+        document.getElementById('image')
+         .style.display = "block";
+        document.getElementById('btnID')
+         .style.display = "none";
+         document.getElementById('btnID2')
+         .style.display = "block";
+        }
+        function hide()
+        {
+        document.getElementById('image')
+        .style.display = "none";
+        document.getElementById('btnID2')
+        .style.display = "none";
+        document.getElementById('btnID')
+         .style.display = "block";
+ }
+ </script>
+    <button type="button" onclick="show()" id="btnID"> Show Photo</button>
+    <button type="button" onclick="hide()" id="btnID2"> Hide Photo</button>
+    <img id="image" src="IMG_20211031_184316_377.jpg" alt="This is my pic" width="100" height="200">
+    <h1>Tharun Kumar Javalkar</h1>
+    <p>D-no:15/728,Kamala Nagar,Anantapuram</p>
+    <p><b>Mobile No:</b><a href="tel:+918008313924">8008313924</a></p>
+    <P><b>Email ID:</b><a href="mailto:tharunkumarjavalkar980@example.com">tharunkumarjavalkar980@gmail.com</a></P>
+    <p></p>
+    <button id="button" type="button" onclick='location.href="https://www.linkedin.com/in/tharun-kumar-200801235"'>Linkedin</a></button>
+    <h2>Career Objective</h2>
+<p>Willing to learn ever-changing technologies and trends, grow and contribute to the organization, I am associated with, to the best of my abilities.</p>
+<h2>Education:</h2>
+<table style="width:100%">
+    <tr>
+        <th>Name of the education</th>
+        <th>College name</th>
+        <th>Board</th>
+        <th>CGPA</th>
+    </tr>
+    <tr>
+        <td>B.Tech-EEE</td>
+        <td>G.Pullareddy Engineering College</td>
+        <td>JNTUA</td>
+        <td>7.60</td>
+    </tr>
+    <tr>
+        <td>INTERMEDIATE</td>
+        <td>Narayana Junior College, Anantapuram</td>
+        <td>BIEAP</td>
+        <td>90.8</td>
+    </tr>
+    <tr>
+        <td>SSC</td>
+        <td>Gautamy English Medium High School, Anantapuram</td>
+        <td>BSEAP</td>
+        <td>9.2</td>
+    </tr>
+</table>
+<h2>Projects:</h2>
+<table style="width:90%">
+    <tr>
+        <th>Duration</th>
+        <th>Name of the project</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Jan - 2022 to
+            Feb -2022</td>
+        <td>Analysis of Switch Boost Inverter using MATLAB Simulink</td>
+        <td>Switch Boost Inverter is a circuit in which we can get more output voltage than the input voltage.
+            The amount of increase in output voltage is based on the charging of the inductor and the value
+            of capacitence we are choosing.</td>
+    </tr>
+    <tr>
+        <td>Sep -2021 to
+            Dec -2021</td>
+        <td>Number Plate Detection using MATLAB.</td>
+        <td>Number plate detection in MATLAB is one type of application in which we can code the machine
+            in such a way that it crops the number plate from the given image and displays the numberplate
+            details in the screen. Also, the code is designed in such a way that it reads the number plate
+            details through audio device.</td>
+        
+    </tr>
+    <tr>
+        <td>Apr-2021 to
+            July-2021</td>
+        <td>Automatic Light intensity Controller using Arduino.</td>
+        <td>Automatic Light Intensity Controller using Arduino is a device which controls the light according
+            to the surroundings. This device can works with the help of Arduino Microcontroller by writing
+            the suitable code regarding to the application.</td>
+        
+    </tr>
+</table>
+<h2>Technical Skills</h2>
+<p><b>Languages:</b>C, CPP and Python</p>
+<p><b>Core Languages:</b>MATLAB(upto Simulink) and Arduino IDE</p>
+<h2>Industrial Experience</h2>
+<p><b>Study on Maintainence of Electric Locomotive.</b></p>
+<p>Done an internship at Electric Loco Shed/TRS, South Central Railway, Vijayawada Division from Jun-2020 toJul-2020</p>
+<h2><b>Workshops and Certifications</b></h2>
+<P><ul>
+    <li>Completed a course on Python Programming offered by the APSSDC</li></ul></P>
+<p><ol><li>Completed English proficiency course STEP conducted by The Hindu.</li></ol></p>
+</body>
+</html>
