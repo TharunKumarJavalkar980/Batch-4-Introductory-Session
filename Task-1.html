@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="demo"></div>
+        <script>
+            function reverse(nu)
+            {
+            let x=0;
+            let flag=0;
+            let n=nu;
+            while(n!=0)
+            {
+                flag=n%10;
+                x=x*10 + flag;
+                n=Math.floor(n/10);
+            }
+        return x;
+        }
+        document.getElementById("demo").innerHTML=reverse(12345);
+        
+        </script>
+    </body>
+</html>
